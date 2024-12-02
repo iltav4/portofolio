@@ -1,0 +1,485 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body{
+  background: #081b29;
+  color: #ededed;
+
+  
+
+}
+
+.header{
+  top:0;
+  left:0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+
+
+.logo{
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+
+.navbar a{
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: #00abf0;
+}
+
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding:0 10%;
+
+}
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+
+
+.home-content p{
+  font-size: 16px;
+  margin:20px 0 40px;
+}
+
+.home-content .btn-box{
+  display: flex;
+  justify-content: space-between;
+  width:345px;
+  height: 50px;
+}
+
+.btn-box a{
+ position: relative;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 150px;
+ height: 100%;
+ background: #00abf0;
+ border: 2px solid #00abf0;
+ border-radius: 8px;
+ font-size: 19px;
+ color: #081b29;
+ text-decoration: none;
+ font-weight: 600;
+ letter-spacing: 1px;
+ z-index: 1;
+ overflow: hidden;
+ transition: .5s;
+}
+
+.btn-box a:hover{
+  color: #00abf0;
+}
+
+
+.btn-box a:nth-child(2){
+  background: transparent;
+  color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover{
+color: #081b29;
+}
+
+
+.btn-box a:nth-child(2)::before{
+ 
+background: #00abf0;
+
+}
+
+.btn-box a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: .5s;
+
+}
+
+.btn-box a:hover::before{
+  width: 100%;
+}
+
+.home-sci{
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+
+}
+
+
+.home-sci a:hover{
+  color: #081b29;
+}
+
+.home-sci a::before{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  width:0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: .5s;
+
+
+}
+
+.home-sci a:hover::before{
+  width:100%;
+}
+
+.base{
+  display:flex;
+  justify-content: space-between;
+}
+
+.immagine{
+  width: 40%;
+  height: 40%;
+  margin-top: 50px;
+  margin-right:60px ;
+
+}
+
+.immagine img{
+  width: 100%;
+  height: 100%;
+  border-radius: 40%;
+}
+
+.about{
+  text-align: center;
+  z-index: -1;
+}
+
+.heading{
+  font-size: 45px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+
+}
+
+.heading span{
+  color: #00abf0;
+}
+
+.about-img{
+  position: relative;
+  display:flex;
+  width: 18%;
+  height: 18%;
+  justify-content: center;
+  align-items:center;
+  border-radius:50%;
+  margin:0 auto;
+  text-align: center;
+
+}
+
+.about-img img{
+  width: 90%;
+  height: 90%;
+  border-radius:50%;
+  border:6px solid #00abf0;
+}
+
+
+.about-content h3{
+  font-size: 2.3rem;
+  margin-top: 10px;
+}
+
+.about-content p{
+  font-size: 18px;
+  color: #00abf0;
+  margin:15px 120px;
+}
+
+.btn-box .btns{
+  width:2.3rem;
+}
+
+.servizi{
+  display:flex;
+  justify-content:space-between;
+  z-index: -1;
+  margin-top:60px;
+}
+
+.web{
+  width:70%;
+  background: white;
+  color:#00abf0;
+  text-align:center;
+}
+
+.web h1{
+  font-size: 50px;
+  font-weight: 800;
+  color: #081b29;
+  margin:30px 0;
+}
+
+.web h2{
+  font-size: 30px;
+  font-weight: 600;
+  margin:20px 0;
+}
+
+
+.web h3{
+  font-size: 20px;
+  font-weight: 800;
+  color: #081b29;
+  margin:5px 0;
+}
+
+
+.web p{
+  font-size: 16px;
+  font-weight: 600;
+  margin:5px 30px;
+}
+
+
+.server{
+  width:70%;
+  background: #00abf0;
+  text-align:center;
+}
+
+
+.server h1{
+  font-size: 50px;
+  font-weight: 800;
+  color: #081b29;
+  margin:30px 0;
+}
+
+.server h2{
+  font-size: 30px;
+  font-weight: 600;
+  margin:20px 0;
+}
+
+
+.server h3{
+  font-size: 20px;
+  font-weight: 800;
+  color: #081b29;
+  margin:5px 0;
+}
+
+
+.server p{
+  font-size: 16px;
+  font-weight: 600;
+  margin:5px 30px;
+}
+
+.skills{
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+  }
+
+.barra{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+}
+
+.barra1{
+  width:50%;
+}
+
+.container{color:black;
+  position:relative;
+  width:90%;
+  background: #fff;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 7px;
+
+}
+
+.container .skill-box{
+  width: 100%;
+  margin: 15px 0;
+}
+
+.skill-box .title{
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color:#081b29;
+
+}
+
+.skill-box .skill-bar{
+  height:8px;
+  width:100%;
+  border-radius:6px;
+  margin-top: 6px;
+  background: rgba(0,0,0,0.1);
+}
+
+.skill-bar .skill-per{
+ position:relative;
+ display: block;
+ height: 100%;
+ width:90%;
+ border-radius: 6px;
+ background: #00abf0;
+ animation: progress 1.5s ease-in-out forwards;
+ opacity:0;
+}
+
+.skill-per.css{
+  width:90%
+}
+
+.skill-per.javascript{
+  width:70%
+}
+
+.skill-per.nodejs{
+  width:60%;
+}
+
+.skill-per.wordpress{
+  width:80%;
+}
+
+.skill-per.nextjs{
+  width:70%;
+}
+
+.skill-per.lavarel{
+  width:65%;
+}
+
+.skill-per.angular{
+  width:65%;
+}
+
+
+
+@keyframes progress {
+ 0%{
+   opacity:0;
+ }
+100%{
+  opacity:1;
+}
+  
+}
+
+.skill-per .tooltip{
+  position:absolute;
+  right:-20px;
+  top:-23px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  background: #00abf0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  z-index:1;
+}
+
+.tooltip::before{
+  content:'';
+  position:absolute;
+  height: 10px;
+  width: 10px;
+  z-index:-1;
+
+}
+
+.barra2{
+  width:50%;
+}
+
+
+
+
+
+
+
+
+
+
